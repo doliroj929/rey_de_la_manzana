@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rey de la Manzana 🍎</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Cabecera -->
+    <header class="header">
+      <div class="header__logo">
+        <span class="header__icon">🍎</span>
+        <h1 class="header__title">Rey de la Manzana</h1>
+        <p class="header__subtitle">Frutas frescas y de temporada</p>
+      </div>
+      <button class="cart-toggle" id="cartToggle" aria-label="Abrir carrito">
+        🛒 Carrito (<span id="cartCount">0</span>)
+      </button>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main">
+      <!-- Filtros y búsqueda -->
+      <section class="filters" aria-label="Filtros">
+        <div class="filters__search">
+          <label for="searchInput" class="visually-hidden">Buscar frutas</label>
+          <input
+            type="text"
+            id="searchInput"
+            class="filters__input"
+            placeholder="🔍 Buscar frutas..."
+            aria-label="Buscar frutas"
+          />
+        </div>
+        <div class="filters__categories" id="categoryFilters" role="group" aria-label="Filtrar por categoría">
+          <button class="filter-btn filter-btn--active" data-category="all">Todas</button>
+          <button class="filter-btn" data-category="manzanas">🍎 Manzanas</button>
+          <button class="filter-btn" data-category="citricos">🍊 Cítricos</button>
+          <button class="filter-btn" data-category="tropicales">🍍 Tropicales</button>
+          <button class="filter-btn" data-category="bayas">🍇 Bayas</button>
+          <button class="filter-btn" data-category="otros">🍑 Otros</button>
+        </div>
+        <div class="filters__sort">
+          <label for="sortSelect">Ordenar por:</label>
+          <select id="sortSelect" class="filters__select">
+            <option value="default">Por defecto</option>
+            <option value="price-asc">Precio: menor a mayor</option>
+            <option value="price-desc">Precio: mayor a menor</option>
+            <option value="name-asc">Nombre: A-Z</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Catálogo de productos -->
+      <section class="catalog" aria-label="Catálogo de frutas">
+        <p class="catalog__count" id="catalogCount"></p>
+        <div class="catalog__grid" id="productGrid" role="list">
+          <!-- Los productos se generan con JavaScript -->
+        </div>
+        <p class="catalog__empty" id="emptyMessage" hidden>
+          No se encontraron productos con ese criterio.
+        </p>
+      </section>
+    </main>
+
+    <!-- Panel del carrito -->
+    <aside class="cart" id="cartPanel" aria-label="Carrito de la compra" hidden>
+      <div class="cart__header">
+        <h2 class="cart__title">🛒 Tu Carrito</h2>
+        <button class="cart__close" id="cartClose" aria-label="Cerrar carrito">✕</button>
+      </div>
+      <ul class="cart__list" id="cartList">
+        <!-- Ítems del carrito generados con JavaScript -->
+      </ul>
+      <div class="cart__footer" id="cartFooter" hidden>
+        <div class="cart__total">
+          Total: <strong id="cartTotal">0,00 €</strong>
+        </div>
+        <button class="cart__checkout" id="checkoutBtn">Finalizar compra</button>
+        <button class="cart__clear" id="clearCartBtn">Vaciar carrito</button>
+      </div>
+      <p class="cart__empty" id="cartEmpty">Tu carrito está vacío.</p>
+    </aside>
+
+    <!-- Overlay para el carrito -->
+    <div class="overlay" id="overlay" hidden></div>
+
+    <!-- Modal de confirmación -->
+    <div class="modal" id="confirmModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+      <div class="modal__content">
+        <h2 class="modal__title" id="modalTitle">¡Pedido realizado! 🎉</h2>
+        <p class="modal__message" id="modalMessage"></p>
+        <button class="modal__btn" id="modalClose">Aceptar</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>© 2024 Rey de la Manzana · Frutas frescas todos los días</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
