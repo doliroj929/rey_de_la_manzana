@@ -1,0 +1,79 @@
+html
+└── head
+│   ├── meta (charset)
+│   ├── meta (viewport)
+│   ├── title
+│   ├── link (CSS)
+│   └── script (JS)
+│
+└── body
+    ├── header
+    │   ├── h1 (Nombre de la tienda / logo)
+    │   │
+    │   ├── nav
+    │   │   └── ul
+    │   │       ├── li → a (Inicio)
+    │   │       ├── li → a (Productos)
+    │   │       ├── li → a (Ofertas)
+    │   │       ├── li → a (Contacto)
+    │   │       └── li → a (Mi cuenta)
+    │   │
+    │   └── form (buscador)
+    │       ├── label
+    │       ├── input (search)
+    │       └── button
+    │
+    ├── main
+    │   ├── section (Hero / portada)
+    │   │   ├── h2
+    │   │   ├── p
+    │   │   └── a (Ver productos)
+    │   │
+    │   ├── section (Filtros)
+    │   │   ├── h2
+    │   │   └── form
+    │   │       ├── label + select (categoría)
+    │   │       ├── label + input (precio mínimo)
+    │   │       ├── label + input (precio máximo)
+    │   │       └── button (Filtrar)
+    │   │
+    │   ├── section (Listado de productos)
+    │   │   ├── h2
+    │   │   └── ul
+    │   │       ├── li
+    │   │       │   └── article
+    │   │       │       ├── img
+    │   │       │       ├── h3
+    │   │       │       ├── p (descripción)
+    │   │       │       ├── p (precio)
+    │   │       │       └── button (Añadir al carrito)
+    │   │       │
+    │   │       ├── li → article (...) <----- esto esta bien ? 
+    │   │       └── li → article (...) <----- esto esta bien ?
+    │   │
+    │   └── section (Newsletter)
+    │       ├── h2
+    │       └── form
+    │           ├── label
+    │           ├── input (email)
+    │           └── button
+    │
+    ├── aside
+    │   ├── h2 (Categorías)
+    │   └── ul
+    │       ├── li → a
+    │       ├── li → a
+    │       └── li → a
+    │
+    └── footer
+        ├── section <------ esto esta bien ? 
+        │   ├── h2 (Sobre nosotros)
+        │   └── p
+        │
+        ├── section
+        │   ├── h2 (Enlaces rápidos)
+        │   └── ul → li → a
+        │
+        └── section
+            ├── h2 (Redes sociales)
+            └── ul → li → a

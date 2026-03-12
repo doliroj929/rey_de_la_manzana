@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>apfel König</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+<!--header-->
+<header class="header">
+    <a class="header__logo" href="./index.html" ><img class="logo" src="./assets/manzana_blanca.png " alt="logo apfel König"/></a>
+    <nav class="menu">
+        <ul class="menu__principal">
+            <li><a class="opcion" href="index.html">inicio</a></li>
+            <li><a class="opcion" href="servicios.html">productos</a></li>
+            <li><a class="opcion"  href="about.html">sobre nosotros</a></li>
+            <li><a class="opcion" href="contacto.html">contacto</a></li>
+            <li><a class="opcion" href="blog.html">blog</a></li>
+            <li><a class="opcion" href="nuevosProductos.html">nuevos productos</a></li>
+        </ul>
+    </nav>
+</header>
+<!--header-->
+<!--main-->
+
+<!-- Al menos 6 tipos de campos distintos:
+    text-ya, email-ya, tel-ya, select-ya, textarea-ya, radio-ya o checkbox-ya.
+
+    Campos obligatorios con atributo required.
+
+    Labels correctamente asociados con for e id.
+
+    Bo  tón de envío. -->
+<main>
+    <section class="contacto">
+        <h1 class="titulo__contacto">contacto</h1>
+
+        <form class=formulario>
+            <label class="formulario__label" for="nombre" >Nombre</label>
+            <input class="formulario__input" type="text" id="nombre"  placeholder=" nombre completo" required>
+
+            <label class="formulario__label" type="tel" for="telefono">Telefono:</label>
+            <input class="formulario__input" type="tel" id="telefono" name="telefono" placeholder="tu numero de telefono" required>
+
+            <label class="formulario__label" for="email">Email:</label>
+            <input class="formulario__input" type="email" id="email" placeholder=" email" required>
+
+            <label class="formulario__label" for="preferencia_manzana">Cuál manzana prefieres:</label>
+
+            <select class="select" id="preferencia_manzana">
+                <option value="" disabled selected>Cual prefieres?</option>
+                <option value="roja">Roja</option>
+                <option value="amarilla">Amarilla</option>
+                <option value="verde">Verde</option>
+            </select>
+
+            <label for="otras_preferencias">Prefiero otras:</label>
+            <textarea id="otras_preferencias"  placeholder="Cual prefires?" ></textarea>
+
+            <p>Como lo quieres comprar</p>
+            <label class="formulario__label" for="kilos">kilos</label>
+            <input class="formulario__casillas" type="radio" id="kilos" name ="manera_de_compra" value="kilos">
+
+            <label class="formulario__label" for="toneladas">toneladas</label>
+            <input class="formulario__casillas" type="radio" id="toneladas" name ="manera_de_compra" value="toneladas">
+
+            <p>Como consumes las manzanas</p>
+            <label class="formulario__label" for="fruta">En fruta</label>
+            <input class="formulario__casillas"  id="fruta" type="checkbox">
+
+            <label class="formulario__label" for="zumo">En zumo</label>
+            <input class="formulario__casillas"  id="zumo" type="checkbox">
+
+            <label class="formulario__label" for="recetas">En recetas</label>
+            <input class="formulario__casillas"  id="recetas" type="checkbox">
+        </form>
+
+    </section>
+</main>
+<!--main-->
+
+<!--Footer-->
+<footer class="footer">
+    <section class="footer__contacto">
+        <h2 class="footer__titulo">Apfel Krönig</h2>
+        <p class="footer__descripcion">Fruta de calidad real para tu mesa diaria.</p>
+    </section>
+
+    <nav class="footer__navegacion">
+        <h5 class="footer__subtitulo">Explorar</h5>
+        <ul class="footer__lista">
+            <li class="footer__opcion"><a href="servicios.html" class="pie__enlace">Productos</a></li>
+            <li class="footer__opcion"><a href="nuevosProductos.html" class="pie__enlace">Nuevos productos</a></li>
+            <li class="footer__opcion"><a href="about.html" class="pie__enlace">Sobre nosotros</a></li>
+        </ul>
+    </nav>
+
+    <address class="footer__direccion">
+        <h3 class="footer__subtitulo">Contacto</h3>
+        <p class="footer__direccion">Calle Principal 123, Ciudad</p>
+        <p class="footer__telefono">Tel: +34 900 000 000</p>
+        <a href="mailto:hola@apfelkronig.com" class="footer__correo">hola@apfelkronig.com</a>
+    </address>
+
+    <small class="footer__copyright">
+        &copy; 2026 Apfel Krönig. Todos los derechos reservados.
+    </small>
+</footer>
+<!--Footer-->
+
+
+
+
+
+</body>
+</html>
