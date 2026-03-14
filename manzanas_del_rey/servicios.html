@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>apfel König</title>
@@ -9,7 +9,7 @@
 
 <!--header-->
 <header class="header">
-    <a class="header__logo" href="./index.html" ><img class="logo" src="./assets/manzana_blanca.png " alt="logo apfel König"/></a>
+    <a class="header__logo" href="./index.html" ><img class="logo" src="./assets/manzana_blanca.png" alt="logo apfel König"></a>
     <nav class="menu">
         <ul class="menu__principal">
             <li><a class="opcion" href="index.html">inicio</a></li>
@@ -23,70 +23,69 @@
 </header>
 <!--header-->
 <!--main-->
-    <section class="productos">
-        <h1 class="productos__titulo-principal" >Nuestros productos</h1>
-
-        <article>
+<main class="main__productos">
+        <section class="productos-banner">
+             <h1 class="productos-banner__titulo-principal" >Nuestros productos</h1>
             <video class="productos__video" src="./media/Manzans_del_rey_video.mp4" autoplay muted loop playsinline></video>
-        </article>
+        </section>
 
+        <section class="productos">
         <h2 class="productos__subtitulo-principal">Siempre fescos</h2>
 
         <article class="producto">
             <h3 class="producto__titulo">manzana roja</h3>
-            <img class="producto__imagen" src="assets/manzanas_red.jpg" alt="manzana roja"/>
+            <img class="producto__imagen" src="assets/manzanas_red.jpg" alt="manzana roja">
             <p class="producto__precio">10.0 €</p>
         </article>
 
         <article class="producto">
             <h3 class="producto__titulo">manzana verde</h3>
-            <img class="producto__imagen" src="assets/manzana-verde.jpg" alt="manzana verde"/>
+            <img class="producto__imagen" src="assets/manzana-verde.jpg" alt="manzana verde">
             <p class="producto__precio">10.0 €</p>
         </article>
 
         <article class="producto">
             <h3 class="producto__titulo">manzana dimante negra</h3>
-            <img class="producto__imagen" src="assets/manzana-Diamante_negro_unidad.png" alt="manzana negra"/>
+            <img class="producto__imagen" src="assets/manzana-Diamante_negro_unidad.png" alt="manzana negra">
             <p class="producto__precio">10.0 €</p>
         </article>
 
         <article class="producto">
             <h3 class="producto__titulo">manzana gold</h3>
-            <img class="producto__imagen" src="assets/manzanas_golden.jpg" alt="manzana gold"/>
+            <img class="producto__imagen" src="assets/manzanas_golden.jpg" alt="manzana gold">
             <p class="producto__precio">10.0 €</p>
         </article>
 
         <article class="producto">
             <h3 class="producto__titulo">manzana quimera</h3>
-            <img class="producto__imagen" src="assets/manzana__quimera.png" alt="manzana gold"/>
+            <img class="producto__imagen" src="assets/manzana__quimera.png" alt="manzana gold">
             <p class="producto__precio">10.0 €</p>
         </article>
+    </section>
 
 
+    <section class="productos-mixtos">
+        <h2 class="productos-mixtos__titulo">Comete el mundo</h2>
         <article class="producto">
             <h3 class="producto__titulo">manzana mix</h3>
-            <img class="producto__imagen" src="assets/manzana_mix.png" alt="manzana gold"/>
+            <img class="producto-mixtos__imagen" src="assets/manzana_mix.png" alt="manzana gold">
             <p class="producto__precio">30.0 €</p>
         </article>
 
-
         <article class="producto">
             <h3 class="producto__titulo">manzana mix exotico</h3>
-            <img class="producto__imagen" src="assets/manzana_mix_exotico.png" alt="manzana gold"/>
+            <img class="producto-mixtos__imagen" src="assets/manzana_mix_exotico.png" alt="manzana gold">
             <p class="producto__precio">30.0 €</p>
         </article>
 
         <article class="producto">
             <h3 class="producto__titulo">Guanabana</h3>
-            <img class="producto__imagen" src="assets/guanaba_fruta_producto.png" alt="manzana gold"/>
+            <img class="producto-mixtos__imagen" src="assets/guanaba_fruta_producto.png" alt="manzana gold">
             <p class="producto__precio">15 €</p>
             <p><a class="producto_saber_mas" href="nuevosProductos.html">Saber mas</a></p>
         </article>
-
-
-
-</section>
-
+    </section>
+</main>
 <!--main-->
 
 <!--Footer-->
@@ -97,7 +96,7 @@
     </section>
 
     <nav class="footer__navegacion">
-        <h5 class="footer__subtitulo">Explorar</h5>
+        <h2 class="footer__subtitulo">Explorar</h2>
         <ul class="footer__lista">
             <li class="footer__opcion"><a href="servicios.html" class="pie__enlace">Productos</a></li>
             <li class="footer__opcion"><a href="nuevosProductos.html" class="pie__enlace">Nuevos productos</a></li>
@@ -105,22 +104,19 @@
         </ul>
     </nav>
 
-    <address class="footer__direccion">
-        <h3 class="footer__subtitulo">Contacto</h3>
-        <p class="footer__direccion">Calle Principal 123, Ciudad</p>
-        <p class="footer__telefono">Tel: +34 900 000 000</p>
-        <a href="mailto:hola@apfelkronig.com" class="footer__correo">hola@apfelkronig.com</a>
-    </address>
+    <section class="contacto">
+        <h2 class="footer__subtitulo">Contacto</h2>
+        <address class="footer__direccion">
+            <p class="footer__direccion">Calle Principal 123, Ciudad</p>
+            <p class="footer__telefono">Tel: +34 900 000 000</p>
+            <a href="mailto:hola@apfelkronig.com" class="footer__correo">hola@apfelkronig.com</a>
+        </address>
+    </section>
 
     <small class="footer__copyright">
         &copy; 2026 Apfel Krönig. Todos los derechos reservados.
     </small>
 </footer>
 <!--Footer-->
-
-
-
-
-
 </body>
 </html>
