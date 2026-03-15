@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -53,6 +53,24 @@
     </section>
 
 
+    <section class="recetas-cliente">
+        <h2 class="recetas__titulo" >Añade tu receta</h2>
+        <label class="recetas-cliente__label" for="receta-cliente__titulo" >Como se llama tu receta</label>
+        <textarea class="recetas-cliente__input" type="text" id="receta-cliente__titulo" placeholder=" Titulo de tu receta"></textarea>
+
+        <label class="recetas-cliente__label" for="receta-cliente__ingredientes" >Ingredientes</label>
+        <textarea class="recetas-cliente__input" type="text" id="receta-cliente__ingredientes" placeholder=" Que lleva tu receta "></textarea>
+
+        <label class="recetas-cliente__label" for="receta-cliente__elaboracion"> Elaboración</label>
+        <textarea class="recetas-cliente__input" type="text" id="receta-cliente__elaboracion" placeholder=" Como se hace tu receta"></textarea>
+
+        <button class="recetas__boton" id="boton-agregar" >--->Añadir<---</button>
+    </section>
+
+    <section id="contenedor-recetas">
+            <p class="receta-cliente__error" id="mensaje-error"></p>
+    </section>
+
 </main>
 <!--main-->
 
@@ -81,10 +99,13 @@
         </address>
     </section>
 
+
+
     <small class="footer__copyright">
         &copy; 2026 Apfel Krönig. Todos los derechos reservados.
     </small>
 </footer>
+<script src="./js/app.js"></script>
 </body>
 <!--Footer-->
 </html>

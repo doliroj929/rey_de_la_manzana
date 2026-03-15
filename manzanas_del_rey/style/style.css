@@ -7,7 +7,7 @@
     --color-amarillo:yellow;
     --color-blanco:whitesmoke;
     --color-negro:black;
-    --color-verde: #049a04;
+    --color-verde: green;
     }
 
 
@@ -144,7 +144,6 @@ body{
 .productos__video{
     border-radius:1rem;
     box-shadow: -5px 5px 30px  0.5rem var(--color-amarillo);
-    background-color: var(--color-verde);
     width: 40rem;
 }
 .productos__subtitulo-principal{
@@ -245,7 +244,7 @@ body{
     padding: 0.5rem;
 }
 
-.blog-historia{
+.sobre-nosotros-historia{
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -253,16 +252,16 @@ body{
     grid-column: 1/5;
     grid-row: 3/4;
 }
-.blog-historia__imagen{
+.sobre-nosotros-historia__imagen{
     height: 25rem;
     width: 60rem;
     grid-column: 1/2;
 }
-.blog-historia__titulo{
+.sobre-nosotros-historia__titulo{
     text-align: center;
 }
 
-.blog-historia__descripcion{
+.sobre-nosotros-historia__descripcion{
     text-align: justify;
     padding: 2rem;
 }
@@ -309,6 +308,13 @@ body{
 
 /*-------------->blog<--------------*/
 /*main*/
+.blog__banner{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
 .blog__titulo{
     text-align: center;
@@ -316,11 +322,12 @@ body{
     text-shadow: -5px 5px 10px var(--color-amarillo);
     padding: 1rem;
 }
-
 .blog__img{
-    height: 30rem;
-    width: 100%;
-    object-fit: scale-down;
+    object-fit:cover;
+    background-color: cyan;
+    border-radius: 30px;
+    height: 25rem;
+    width: 70rem;
 }
 
 .recetas{
@@ -335,7 +342,6 @@ body{
    text-shadow: -5px 5px 7px var(--color-amarillo);
 }
 
-
 .manzana-asada{
     display: flex;
     flex-direction: column;
@@ -344,21 +350,63 @@ body{
     text-align: justify;
     align-content: center;
 }
-
 .manzana-asada__imagen{
-    width: 80%;
-    height: 40rem;
+    height: 20rem;
+    width:40rem ;
     border-radius: 3rem;
     object-fit: cover;
 }
-
 .manzana-asada__subtitulo{
     text-align: start;
     font-size: 1.2rem;
 }
 
+.receta-cliente__error{
+    Color: red;
+    font-weight:bold;
+    text-align: center;
+    font-size: 2rem;
+    background-color: var(--color-amarillo);
+}
+
+.recetas-cliente{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:space-between;
+    align-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.recetas__boton{
+    height: 3rem;
+    width: 10rem;
+    color: var(--color-negro);
+
+    border-block-color: var(--color-rojo);
+    border-radius: 30px;
+}
+
+
+.nueva-receta{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap:2rem;
+    padding: 4rem;
+}
+
+
+
+
+
+
 /*main*/
 /*-------------->blog<--------------*/
+
 /*-------------->nuevoProductos<--------------*/
 /*main*/
 .main__producto-nuevo{
@@ -367,7 +415,6 @@ body{
     grid-template-columns: 1fr 7fr 1fr;
 
 }
-
 .productos-nuevo_banner{
     align-items: center;
     justify-content: center;
@@ -376,7 +423,6 @@ body{
     grid-column:2/3;
     grid-row: 1/2;
 }
-
 .productos-nuevos__titulo{
     color: var(--color-verde);
     text-shadow: -5px 5px 10px var(--color-amarillo);
