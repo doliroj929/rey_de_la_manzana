@@ -240,7 +240,6 @@ body{
     text-align: justify;
     align-content: center;
     border-radius: 30px;
-    box-shadow: -5px 5px 10px var(--color-rojo);
     padding: 0.5rem;
 }
 
@@ -303,6 +302,19 @@ body{
     height: 2rem;
     text-align: justify
 }
+
+.formulario__enviar{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: var(--color-rojo);
+    box-shadow: -5px 5px 10px var(--color-rojo);
+    font-weight: bolder;
+    color: var(--color-blanco);
+}
+
+
+
 /*main*/
 /*--------->Contacto*************/
 

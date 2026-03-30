@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>apfel König</title>
@@ -24,10 +24,24 @@
 <!--header-->
 <!--main-->
 <main class="main__productos">
+
         <section class="productos-banner">
              <h1 class="productos-banner__titulo-principal" >Nuestros productos</h1>
             <video class="productos__video" src="./media/Manzans_del_rey_video.mp4" autoplay muted loop playsinline></video>
         </section>
+
+        <section class="filtro-contenedor" >
+            <label for="selectorPrecio" >Filtrar por presupuesto: </label>
+            <select  id="selectorPrecio" >
+                <option value="all">Todos los precios</option>
+                <option value="10">Hasta 10.0 €</option>
+                <option value="15">Hasta 15.0 €</option>
+                <option value="20">Hasta 20.0 €</option>
+                <option value="30">Hasta 30.0 €</option>
+            </select>
+        </section>
+
+
 
         <section class="productos">
         <h2 class="productos__subtitulo-principal">Siempre fescos</h2>
@@ -47,7 +61,7 @@
         <article class="producto">
             <h3 class="producto__titulo">manzana dimante negra</h3>
             <img class="producto__imagen" src="assets/manzana-Diamante_negro_unidad.png" alt="manzana negra">
-            <p class="producto__precio">10.0 €</p>
+            <p class="producto__precio">15.0 €</p>
         </article>
 
         <article class="producto">
@@ -59,7 +73,7 @@
         <article class="producto">
             <h3 class="producto__titulo">manzana quimera</h3>
             <img class="producto__imagen" src="assets/manzana__quimera.png" alt="manzana gold">
-            <p class="producto__precio">10.0 €</p>
+            <p class="producto__precio">15.0 €</p>
         </article>
     </section>
 
@@ -81,7 +95,7 @@
         <article class="producto">
             <h3 class="producto__titulo">Guanabana</h3>
             <img class="producto-mixtos__imagen" src="assets/guanaba_fruta_producto.png" alt="manzana gold">
-            <p class="producto__precio">15 €</p>
+            <p class="producto__precio">20 €</p>
             <p><a class="producto_saber_mas" href="nuevosProductos.html">Saber mas</a></p>
         </article>
     </section>

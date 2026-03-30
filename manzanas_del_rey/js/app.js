@@ -1,6 +1,8 @@
 
 console.log("aqui comienza todo")
 
+
+// agregar recetas
 const contenedorRecetas = document.querySelector("#contenedor-recetas");
 const botonAgregar = document.querySelector("#boton-agregar");
 const mensajeError = document.querySelector("#mensaje-error");
@@ -64,7 +66,35 @@ function agregarRecetas() {
 }
 
 // evento
-botonAgregar.addEventListener('click', agregarRecetas);
+botonAgregar.addEventListener('click',agregarRecetas);
 
+//------------------------------------------------------------------
+// filtro
 
+const selector = document.getElementById('selectorPrecio');
+// Seleccionamos todos los artículos que tengan la clase "producto"
+const productos = document.querySelectorAll('.producto');
 
+selector.addEventListener('change', () => {
+    const valorSeleccionado = selector.value;
+
+    productos.forEach(producto => {
+        // 1. Extraer el texto del precio
+        const precioTexto = producto.querySelector('.producto__precio').textContent;
+
+        // 2. Convertirlo a número (limpiando el símbolo €)
+        const precioNumero = parseFloat(precioTexto.replace('€', '').trim());
+
+        // 3. Lógica de visibilidad
+        if (valorSeleccionado === "all") {
+            producto.style.display = "block";
+        } else {
+            const limite = parseFloat(valorSeleccionado);
+            if (precioNumero <= limite) {
+                producto.style.display = "block";
+            } else {
+                producto.style.display = "none";
+            }
+        }
+    });
+});
