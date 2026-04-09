@@ -62,11 +62,14 @@ function agregarRecetas() {
 
     // 6. Limpieza de campos (Función flecha auxiliar)
     limpiarFormulario([inputTitulo, inputIngredientes, inputElaboracion]);
-
 }
 
 // evento
 botonAgregar.addEventListener('click',agregarRecetas);
+
+
+
+
 
 //------------------------------------------------------------------
 // filtro
